@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_blue.css">
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <p>Serene Horizon Resort</p>
+        </div>
+        <div class="links" id="myLinks">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="review.html" >Reviews</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="#" style="color: #3498db;">Booking</a></li>
+        </ul>
+    </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+    </nav>
+    <div class="our_rooms">
+        <h2>Our Room Types</h2>
+    </div>
+    <div class="rooms">
+       <div class="standard_room" id="standard_room">
+        <div class="room_image">
+            <img src="standard_room.jpeg" alt="">
+        </div>
+        <div class="room_info">
+            <h3>Standard Room</h3>
+            <p>Comfortable room with essential amenities.</p>
+        </div>
+        <div class="purchase_room" >
+            <p>$99/night</p>
+            <button>Select</button>
+        </div>
+        </div>
+        <div class="delux_room" id="delux_room">
+            <div class="room_image" >
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="">
+            </div>
+            <div class="room_info" >
+                <h3>Deluxe Room</h3>
+                <p>Luxurious suite with private balcony.</p>
+            </div>
+            <div class="purchase_room">
+                <p>$299/night</p>
+                <button>Select</button>
+            </div>
+            </div>
+        <div class="exclusive_room" id="exclusive_room">
+            <div class="room_image">
+                <img src="https://media.cnn.com/api/v1/images/stellar/prod/160905121112-presidential-suites-st-regis-dubai-pool.jpg?q=w_2100,h_1400,x_0,y_0,c_fill" alt="">
+            </div>
+            <div class="room_info">
+                <h3>Exclusive Suite</h3>
+                <p>Comfortable room with essential amenities.</p>
+            </div>
+            <div class="purchase_room" >
+                <p>$499/night</p>
+                <button>Select</button>
+            </div>
+            </div>
+        
+    </div>
+    <div class="our_features">
+        <h2>Features</h2>
+    </div>
+    <div class="features">
+        <div class="standard_room" id="standard_room">
+            <div class="room_info">
+                <h3>Standard Room</h3>
+            </div>
+            <div class="room_features">
+                <ul>
+                    <li>Queen-sized bed</li>
+                    <hr>
+                    <li>Air Conditioning</li>
+                    <hr>
+                    <li>Free Wi-Fi</li>
+                    <hr>
+                    <li>Work desk</li>
+                    <hr>
+                </ul>
+           </div> </div>
+        <div class="delux_room" id="delux_room">
+            <div class="room_info">
+                <h3>Delux Room</h3>
+            </div>
+            <div class="room_features">
+                <ul>
+                    <li>King-sized bed</li>
+                    <hr>
+                    <li>Minibar</li>
+                    <hr>
+                    <li>Private bathroom with bathtub</li>
+                    <hr>
+                    <li>Flat-screen TV</li>
+                    <hr>
+                </ul>
+           </div> </div>
+        <div class="exclusive_room" id="exclusive_room">
+            <div class="room_info">
+                <h3>Exclusive Suite</h3>
+            </div>
+            <div class="room_features">
+                <ul>
+                    <li>Separate living area</li>
+                    <hr>
+                    <li>Panoramic ocean view</li>
+                    <hr>
+                    <li>High-speed internet</li>
+                    <hr>
+                    <li>Premium bedding</li>
+                    <hr>
+                </ul>
+           </div> </div>
+    </div>
+    <div class="our_form">
+        <h2>Book Yours Now</h2>
+    </div>
+    <form action="">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required="" autocomplete="off">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required="" autocomplete="off">
+        <label for="checkin">Check-in Date</label>
+        <input type="date" id="checkin" required="" autocomplete="off" placeholder="Select">
+        <label for="checkout">Check-out Date</label>
+        <input type="date" id="checkout" required="" autocomplete="off" placeholder="Select">
+        <label for="room">Select Room</label>
+        <label class="neon-label">
+            <input type="radio" name="room" value="standard" id="standard" checked > Standard Room
+        </label>
+        <label class="neon-label">
+            <input type="radio" name="room" value="luxury" id="luxury"> Luxury Room
+        </label>
+        <label class="neon-label">
+            <input type="radio" name="room" value="exclusive" id="exclusive"> Exclusive Suite
+        </label>
+        <div class="form_button">
+            <button type="submit" id="SubmitBtn">Book Now</button>
+        </div>
+    </form>
+    <footer>
+        <div class="above-ft" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
+            <div class="stepinstyle">
+                <p id="H22">Serene Horizon Resort</p><hr>
+                <p>
+                    Your ultimate getaway by the ocean.
+                </p>
+            </div>
+            <div class="quick-links">
+                <p id="H23" id="qck-links-h2">Quick-Links</p>
+                <hr>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="review.html">Reviews</a></li>
+                    <li><a href="location.html" >Location</a></li>
+                    <li><a href="Booking.html" style="color: #3498db;" >Booking</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                
+                    <p class="H22" id="H22">Contact Us</p>
+                    <ul>
+                        <li><a href="#" id="insta" class="fab fa-instagram"></a> </li>
+                        <li><a href="#" class="fab fa-twitter"></a></li>
+                        <li><a href="#" class="fab fa-facebook-f"></a></li>
+                        <li><a href="#" class="fab fa-whatsapp"></a></li>
+                        <li><a href="#" class="fab fa-youtube"> </a></li>
+                    </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        AOS.init({
+            once: false  
+          });
+        
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            var currentDisplay = window.getComputedStyle(x).display;
+        
+            if (currentDisplay === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        
+        // ✅ Desktop view pe aate hi inline styles hata do
+        window.addEventListener("resize", function () {
+            var x = document.getElementById("myLinks");
+            if (window.innerWidth > 650) {
+                x.style.display = ""; // Reset to default CSS
+            }
+        });
+        
+        flatpickr("#checkout", {
+            minDate: "today",
+            maxDate: new Date().fp_incr(14),
+            disableMobile: true // Mobile devices ke default picker ko disable karega
+        })
+        flatpickr("#checkin", {
+            minDate: "today",
+            maxDate: new Date().fp_incr(14),
+            disableMobile: true // Mobile devices ke default picker ko disable karega
+        })
+        document.addEventListener("DOMContentLoaded", function() {
+            let hash = window.location.hash;
+            if (hash) {
+                let target = document.querySelector(hash);
+                if (target) {
+                    gsap.to(window, { duration: 1.5, scrollTo: target });
+                    gsap.from(target, { opacity: 0, y: 50, duration: 1.5 });
+                }
+            }
+        });
+    </script>
+ 
+<script>
+     const AddBookingButton  = document.getElementById('SubmitBtn');
+     let customersData = JSON.parse(localStorage.getItem("hotelBookings")) || [];
+     AddBookingButton.addEventListener("click" , ()=>{
+        let name = document.getElementById('name').value;
+        let email = document.getElementById('email').value;
+        let checkin = document.getElementById('checkin').value;
+        let checkout = document.getElementById('checkout').value;
+        let standardRoom ="-";
+        let luxuryRoom = "-";
+        let exclusiveSuite = "-";
+        let selectedRadio = document.querySelector('input[name="room"]:checked');
+    
+        if (selectedRadio.value === "standard") {
+            standardRoom = "1";
+        } 
+        else if (selectedRadio.value === "luxury") {
+        luxuryRoom = "1";
+        } 
+        else if (selectedRadio.value === "exclusive") {
+        exclusiveSuite = "1";
+        }
+
+        if(name.trim() ==="" || email.trim() === "" || checkin === "" || checkout === "" ){
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Please Fill All Fields Correctly",
+              });
+            return; //aage nhi jayega tab tak jab tak value true na ho
+        }
+        let singleData = {
+            Name : name,
+            Email : email,
+            CheckIn : checkin,
+            CheckOut : checkout,
+            StandardRoom : standardRoom,
+            LuxuryRoom : luxuryRoom, 
+            ExclusiveSuite : exclusiveSuite
+        }
+        customersData.push(singleData);
+        console.log(customersData);
+
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("checkin").value = "";
+        document.getElementById("checkout").value = "";
+        document.querySelectorAll('input[name="room"]').forEach(radio => radio.checked = false);
+        Swal.fire({
+            title: "<strong>Room booked Successfully</strong>",
+            icon: "success",
+            draggable: true,
+            html: `<strong>Want to see Admin's Office?</strong>`,
+            showCloseButton: true,
+            showCancelButton: true,
+            focusConfirm: false,
+            confirmButtonText:`<a class="buttontext" href="admin.html"> <strong>Yes! Let's Go!!</strong> </a>`,
+            confirmButtonAriaLabel: "Thumbs up, great!",
+            cancelButtonText: `<strong>NO! Thanks</strong>`,
+            cancelButtonAriaLabel: "Thumbs down"
+          }).then(() => {
+            location.reload(); 
+        });
+          localStorage.setItem("hotelBookings", JSON.stringify(customersData));
+          
+        })
+</script>
+</body>
+</html>

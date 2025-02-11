@@ -1,0 +1,726 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+:root{
+    --fnt:'Noto Sans JP', sans-serif;
+    --tw-bg-opacity : 1
+}
+nav{
+    display: flex;
+    background: rgb(247, 247, 247);
+    justify-content: space-between;
+    align-items: center;
+}
+.icon{display: none;}
+.logo p{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.5rem;
+    color: rgb(30 64 175);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.links{
+    display: flex;
+    width: 50%;
+}
+.links ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 0.3rem;
+    padding-bottom: 0.5rem;
+    color: rgb(55 65 81 );
+    opacity: 0.8;   
+}
+nav ul li a , .buttontext{
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Noto Sans JP', sans-serif;
+    transition: all ease-in-out .4s;
+}
+.intro{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80) no-repeat center ;
+    background-size: cover;
+    background-attachment:fixed;
+    height: 85vh;
+    width: 100%;
+    color: white; /* Text readable rahega */
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: white;
+    padding-left: 5%;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    padding-left: 5%;
+    max-width: 800px;
+    line-height: 1.5;
+    padding-top: 1%;
+}
+.intro a {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 5%;
+    margin-left: 5%;
+    padding-left: 0;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    border: 2px solid transparent; /* Initial border */
+    box-shadow: none; /* Initial shadow */
+}
+
+.intro a:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    border-radius:12px;
+    border: 2px solid white; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.intro a svg {
+    margin-left: 8px;
+}
+.specialities {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top:5%;
+    background: linear-gradient(135deg, #f0f4f8, #cfd9e6);
+    padding-bottom: 5%;
+}
+
+.primelocation svg , .premiumservices svg, .luxuriousrooms svg   {
+    color: rgb(37 99 235);
+    margin-bottom: 1rem;
+}
+
+.primelocation h2 , .premiumservices h2 , .luxuriousrooms h2{
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.75rem;
+    margin-bottom: .5rem;
+    color: #000000;
+}
+
+.primelocation p ,.premiumservices p, .luxuriousrooms p{
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    margin-bottom: .5rem;
+    color: #000000;
+}
+.premiumservices , .luxuriousrooms{
+    padding-top: 5%;
+}
+.rooms,.resort_aminities ,.features{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; 
+    padding-bottom: 5%;
+}
+
+.features .standard_room,
+.features .delux_room,
+.features .exclusive_room,
+.rooms .standard_room,
+.rooms .delux_room,
+.rooms .exclusive_room,
+.resort_aminities .Infinity_Pool,
+.resort_aminities .Luxury_Spa,
+.resort_aminities .gourmet_dining {
+    width: 30%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.features  .standard_room:hover,
+.features .delux_room:hover,
+.features .exclusive_room:hover,
+.rooms .standard_room:hover,
+.rooms .delux_room:hover,
+.rooms .exclusive_room:hover,
+.resort_aminities .Infinity_Pool:hover,
+.resort_aminities .Luxury_Spa:hover,
+.resort_aminities .gourmet_dining:hover
+ {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.room_image,.pool_image,.spa_image,.gourmet_image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.room_image img ,.pool_image img,.spa_image img,.gourmet_image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.room_info h3,.pool_info h3,.spa_info h3,.gourmet_info h3 {
+    font-weight: 600;
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    margin-bottom: .5rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #333;
+}
+.room_info p,.pool_info p,.spa_info p,.gourmet_info p {
+    color: #555;
+    font-weight: 500;
+    opacity: 0.8;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.purchase_room {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.purchase_room p {
+    color: #333;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.purchase_room button {
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+.purchase_room button:hover {
+    background-color: #005bb5;
+}
+.our_rooms , .resort_aminities_h2 ,.our_features , .our_form ,.our_Discover ,.our_map , .our_address , .our_reviews , .our_add_review{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.resort_aminities_h2 h2 , .our_rooms h2 ,.our_features h2 , .our_form h2 , .our_Discover h2 , .our_map h2 , .our_address h2 , .our_reviews h2 , .our_add_review h2{
+    font-weight: 700;
+    width: 50%;
+    margin: auto;
+    font-size: 2rem; /* Slightly larger font size */
+    line-height: 2.5rem; /* Increased line height for better spacing */
+    color: white; /* White color for contrast */
+    opacity: 0.9; /* Less opacity for a cleaner look */
+    text-align: center;
+    padding: 10px 30px; /* Added padding for better spacing */
+    background: radial-gradient(circle, rgba(52,152,219,1) 0%, rgba(142,68,173,1) 100%); /* Radial gradient */
+    border-radius: 50px; /* Rounded corners for a sleek design */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    letter-spacing: 1px;
+    transition: all 0.4s ease; /* Smooth transition */
+    text-transform: uppercase; /* Uppercase for bold effect */
+    font-family: 'Arial', sans-serif; /* Clean sans-serif font */
+}
+
+.resort_aminities_h2 h2:hover , .our_rooms h2:hover , .our_features h2:hover , .our_form h2:hover , .our_Discover h2:hover , .our_map h2:hover , .our_address h2:hover , .our_reviews h2:hover , .our_add_review h2:hover{
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+    background: radial-gradient(circle, rgba(52,152,219,1) 0%, rgba(142,68,173,1) 90%); /* Change gradient direction on hover */
+}
+.above-ft{
+    
+    display: flex;
+    margin-top: 5%;
+    background-color: #2c3e50;
+}
+.stepinstyle{
+   
+    width: 35%;
+}
+.stepinstyle p{
+    color:white;
+    font-family: var(--fnt);
+    padding: 10px;
+    padding-left: 15%;
+    padding-top: 5%;
+}
+#H22 , #H23{
+    color:white;
+    font-family: var(--fnt);
+    font-size: 1.5em;
+    padding-right: 1.5%;
+    padding-left: 15%;
+    padding-bottom: 1.5%;
+    padding-top: 2%;
+}
+.stepinstyle hr{
+    width: 25%;
+    margin-left: 15%;
+    margin-top: 0%;
+}
+.quick-links{
+    
+    width: 30%;
+}
+.quick-links hr{
+    width: 28%;
+    margin-left: 15%;
+}
+.quick-links ul{
+    list-style: none;
+    padding-top: 3%;
+    padding-left: 25%;
+}
+.quick-links a{
+    color:white;
+    font-family: var(--fnt);
+    text-decoration: none;
+    line-height: 2;
+    transition: all ease-in .4s;
+}
+ a:hover , li a:hover{
+    color: #3498db;
+}
+
+.social{
+    width: 30%;
+    justify-content: space-evenly;
+}
+.social ul{
+    list-style: none;
+    padding-top: 3%;
+    padding-left: 0%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.social a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.8em;
+    padding-left:0;
+    transition: all ease-out .4s;
+}
+.social_links a:hover{
+    opacity: 0.5;
+}
+.ham{
+    display: none;
+}
+/* Booking */
+#standard_room:hover,
+#delux_room:hover,
+#exclusive_room:hover {
+    transform: translateY(-10px);  /* Added px unit */
+    transition: transform 0.3s ease;  /* Smooth transition */
+}
+
+.features .standard_room,
+.features .delux_room,
+.features .exclusive_room{
+    border: solid;
+}
+.features ul{
+    list-style: none;
+    line-height: 2em;
+    font-size: 1.2em;
+}
+.features ul li::before {
+    content: '★ '; 
+    color:  #FFD700;
+}
+form {
+    background-color: #2c3e50;
+    padding: 30px 50px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 50%;
+    margin: 40px auto;
+    color: white;
+}
+
+form h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #ecf0f1;
+}
+
+form label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="date"] {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #34495e;
+    border-radius: 8px;
+    background-color: #ecf0f1;
+    font-size: 1rem;
+    color: #34495e;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+    accent-color: green;
+}
+ 
+ form button , #newReview {
+    width: 30%;
+    padding: 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+button:hover , form button:hover , #newReview:hover ,#clear_table:hover  {
+    background-color: #2980b9;
+}
+
+/* Location */
+.window_view  , .locality_view , .parking_view{
+    position: relative;
+    width: 75%;
+    max-width: 800px;
+    margin: 20px auto;
+    border: none;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+.window_text h2{
+    font-size: 2.2em;
+}
+.window_view img , .locality_view img , .parking_view img{
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    transition: filter 0.3s ease-in-out;
+}
+
+
+.window_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%);
+    margin-top: 25%;
+    width: 90%;
+    color: white;
+    font-size: 18px;
+    opacity: 1;
+    padding: 10px 20px;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+
+}
+.window_view:hover, .locality_view:hover, .parking_view:hover {
+    transform: scale(1.05); 
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.window_view:hover .window_text , .locality_view:hover .window_text , .parking_view:hover .window_text{
+    opacity: 1;
+    margin-top: 15%;
+}
+.window_view:hover img , .locality_view:hover img , .parking_view:hover img{
+    filter: brightness(80%);
+}
+.locality_view , .parking_view{
+    margin-top: 5%;
+}
+
+.map {
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Strong shadow for 3D effect */
+    overflow: hidden;
+    background-color: #f5f5f5; /* Light background for the container */
+    padding: 10px; /* Inner padding */
+    transition: transform 0.3s ease-in-out;
+}
+.map:hover {
+    transform: scale(1.03); 
+}
+
+.map iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.map h3 {
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.hotel_address p {
+    color: #000000;
+}
+.reviews{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 20px 5%;
+}
+.review {
+    border: solid;
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
+    position: relative; /* Relative positioning for absolute child */
+}
+
+.review:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.review:hover .delete_review_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.review h2 , .review p{
+    color: #000000;
+    padding-left:2%;
+    padding-right: 2%;
+}
+.review h2{
+    font-weight: 600;
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    margin-bottom: .5rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #333;
+}
+.review p{
+    color: #555;
+    font-weight: 500;
+    opacity: 0.8;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.add_review{
+    display: block;
+    border: solid;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+}
+.add_review label{
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: left;
+}
+.add_review input[type = "text"]{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #3498db;
+    border-radius: 0%;
+    outline: none;
+    background-color: white ;
+}
+.review_button , .form_button{
+    text-align: center;
+}
+.review_button button , .form_button button{
+    border: solid;
+}
+.delete_review_button {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 10px; /* Adjust distance from top */
+    right: 10px; /* Adjust distance from right */
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.demo_review_button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.demo_review_button:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+}
+/* Admin's secret */
+
+.table-wrapper{
+    margin: 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #4FC3A1;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+#clear_table{
+    padding: 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 2%;
+}
+/* Responsive */
+
+@media (max-width: 767px) {
+    .fl-table {
+        display: block;
+        width: 100%;
+    }
+    .table-wrapper:before{
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: white;
+        padding: 0 0 10px;
+    }
+    .fl-table thead, .fl-table tbody, .fl-table thead th {
+        display: block;
+    }
+    .fl-table thead th:last-child{
+        border-bottom: none;
+    }
+    .fl-table thead {
+        float: left;
+    }
+    .fl-table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .fl-table td, .fl-table th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+    .fl-table thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    .fl-table tbody tr {
+        display: table-cell;
+    }
+    .fl-table tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .fl-table tr:nth-child(even) {
+        background: transparent;
+    }
+    .fl-table tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tbody td {
+        display: block;
+        text-align: center;
+    }
+}

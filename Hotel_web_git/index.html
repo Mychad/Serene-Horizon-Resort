@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <nav data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
+        <div class="logo">
+            <p>Serene Horizon Resort</p>
+        </div>
+        <div class="links" id="myLinks">
+        <ul>
+            <li><a href="#" style="color: #3498db;">Home</a></li>
+            <li><a href="review.html">Reviews</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="Booking.html">Booking</a></li>
+        </ul>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+    </nav>
+    <div class="intro" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
+        <div data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
+            <h2>Oceanfront Luxury Awaits</h2>
+            <p>Immerse yourself in breathtaking views and unparalleled comfort at Serene Horizon Resort.</p>
+            <a href="Booking.html#name">Book now <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right ml-2"><path d="m9 18 6-6-6-6"></path></svg></a>
+        </div>
+    </div>
+    <div class="specialities" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
+        <div class="primelocation" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin mx-auto mb-4 text-blue-600"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <h2>Prime Location</h2>
+            <p>Situated in the heart of the city, offering easy access to major attractions.</p>
+        </div>
+        <div class="premiumservices" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star mx-auto mb-4 text-blue-600"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <h2>Premium Services</h2>
+            <p>Exceptional amenities and personalized service to exceed your expectations.</p>
+        </div>
+        <div class="luxuriousrooms" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bed mx-auto mb-4 text-blue-600"><path d="M2 4v16"></path><path d="M2 8h18a2 2 0 0 1 2 2v10"></path><path d="M2 17h20"></path><path d="M6 8v9"></path></svg>
+            <h2>Luxurious Rooms</h2>
+            <p>Elegantly designed rooms with modern comfort and stunning views.</p>
+        </div>
+    </div>
+    <div class="our_rooms" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
+        <h2>Our Room Types</h2>
+    </div>
+    <div class="rooms" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
+       <div class="standard_room" >
+        <div class="room_image">
+            <img src="standard_room.jpeg" alt="">
+        </div>
+        <div class="room_info">
+            <h3>Standard Room</h3>
+            <p>Comfortable room with essential amenities.</p>
+        </div>
+        <div class="purchase_room" >
+            <p>$99/night</p>
+            <button>Select</button>
+        </div>
+        </div>
+        <div class="delux_room" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
+            <div class="room_image" >
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="">
+            </div>
+            <div class="room_info" >
+                <h3>Deluxe Suite</h3>
+                <p>Luxurious suite with private balcony.</p>
+            </div>
+            <div class="purchase_room">
+                <p>$299/night</p>
+                <button>Select</button>
+            </div>
+            </div>
+        <div class="exclusive_room" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
+            <div class="room_image">
+                <img src="https://media.cnn.com/api/v1/images/stellar/prod/160905121112-presidential-suites-st-regis-dubai-pool.jpg?q=w_2100,h_1400,x_0,y_0,c_fill" alt="">
+            </div>
+            <div class="room_info">
+                <h3>Exclusive Room</h3>
+                <p>Comfortable room with essential amenities.</p>
+            </div>
+            <div class="purchase_room" >
+                <p>$499/night</p>
+                <button>Select</button>
+            </div>
+            </div>
+        
+    </div>
+<div class="resort_aminities_h2" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
+    <h2>Resort Amenities</h2>
+</div>
+<div class="resort_aminities" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
+    <div class="Infinity_Pool">
+        <div class="pool_image">
+            <img src="https://media.angi.com/s3fs-public/_luxury-infinity-pool_70337832.jpg"alt="">
+        </div>
+        <div class="pool_info">
+            <h3>Infinity Pool</h3>
+        <p>Relax in our stunning oceanfront infinity pool.</p>
+        </div>
+    </div>
+
+    <div class="Luxury_Spa" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
+        <div class="spa_image">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/hbz-ott-viceroy-spa-1510676687.jpg"alt="">
+        </div>
+        <div class="spa_info">
+            <h3>Luxury Spa</h3>
+        <p>Rejuvenate with world-class spa treatments.</p>
+        </div>
+    </div>
+
+    <div class="gourmet_dining" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
+        <div class="gourmet_image">
+            <img src="https://cdn.shopify.com/s/files/1/2464/8943/files/What_is_a_gourmet_meal.png?v=1706870135"alt="">
+        </div>
+        <div class="gourmet_info">
+            <h3>Gourmet Dining</h3>
+        <p>Exquisite cuisine with breathtaking views.</p>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="above-ft" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
+        <div class="stepinstyle">
+            <p id="H22">Serene Horizon Resort</p><hr>
+            <p>
+                Your ultimate getaway by the ocean.
+            </p>
+        </div>
+        <div class="quick-links">
+            <p id="H23" id="qck-links-h2">Quick-Links</p>
+            <hr>
+            <ul>
+                <li><a href="#" style="color: #3498db;">Home</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="Booking.html">Booking</a></li>
+            </ul>
+        </div>
+        <div class="social">
+            
+                <p class="H22" id="H22">Contact Us</p>
+                <ul>
+                    <li><a href="#" id="insta" class="fab fa-instagram"></a> </li>
+                    <li><a href="#" class="fab fa-twitter"></a></li>
+                    <li><a href="#" class="fab fa-facebook-f"></a></li>
+                    <li><a href="#" class="fab fa-whatsapp"></a></li>
+                    <li><a href="#" class="fab fa-youtube"> </a></li>
+                </ul>
+        </div>
+    </div>
+</footer>
+<script>
+    AOS.init({
+        once: false  
+      });
+      document.addEventListener("DOMContentLoaded", function() {
+        let hash = window.location.hash;
+        if (hash) {
+            let target = document.querySelector(hash);
+            if (target) {
+                gsap.to(window, { duration: 1.5, scrollTo: target });
+                gsap.from(target, { opacity: 0, y: 50, duration: 1.5 });
+            }
+        }
+    });
+    
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        var currentDisplay = window.getComputedStyle(x).display;
+    
+        if (currentDisplay === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    
+    // ✅ Desktop view pe aate hi inline styles hata do
+    window.addEventListener("resize", function () {
+        var x = document.getElementById("myLinks");
+        if (window.innerWidth > 650) {
+            x.style.display = ""; // Reset to default CSS
+        }
+    });
+    function scrollToSection() {
+        let element = document.getElementById("hy");
+        if (element) {
+            gsap.to(window, { duration: 1, scrollTo: element });
+            gsap.from(element, { opacity: 0, y: 50, duration: 1 });
+        }
+    }
+</script>
+
+</body>
+</html>
