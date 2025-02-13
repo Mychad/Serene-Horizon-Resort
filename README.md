@@ -41,7 +41,7 @@ Bootstrap 5
 To set up this project locally, follow these steps:
 
 # Clone the repository
-git clone https://github.com/YOUR_GITHUB_USERNAME/Serene-Horizon-Resort.git
+git clone https://github.com/Mychad/Serene-Horizon-Resort.git
 
 # Navigate to project folder
 cd Serene-Horizon-Resort
